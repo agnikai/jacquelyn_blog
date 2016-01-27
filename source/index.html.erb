@@ -2,9 +2,38 @@
 title: Welcome to Middleman
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div class="home">
+	<h1 class="title">Chaos Cat</h1>
+	<h2 class="blurb">A look at the intricaties of insanity as observed by one innocent onlooker.</h2>
+<!-- 	<div class="articles_list">
+		<h1>Rants, Reviews, Experiences, & Musings</h1>
+		<div class="articles_by_tag">
+			<ul>
+			  <% blog.tags.each do |tag, articles| %>
+			    <li>
+			      <h5><%= tag %></h5>
+			      <ul>
+			        <% articles.each do |article| %>
+			          <li><a href="<%= article.url %>"><%= article.title %></a></li>
+			        <% end %>
+			      </ul>
+			    </li>
+			  <% end %>
+			</ul>
+		</div> <!-- articles_by_tag -->  
+		<div class="recent_articles">
+			<h1>Rants, Reviews, Experiences, & Musings</h1>
+			<% blog.articles[0...5].each do |article| %>
+			  <article>
+			  	<a href="<%=article.url %>">Article Number</a>
+
+			    <%= article.summary %>
+
+			    <a href="<%= article.url %>">Read more</a>
+			    <p>****************************************************</p>
+			  </article>
+			<% end %>
+		</div> <!-- recent_articles -->
+	</div> <!-- articles_list -->
+</div> <!-- home -->
+
