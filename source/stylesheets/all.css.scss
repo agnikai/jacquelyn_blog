@@ -1,15 +1,11 @@
+@import 'home';
+@import 'vendor/fonts';
 //*= require bootstrap-sass/assets/stylesheets/_bootstrap
 //*= require_tree ./vendor
 
 @charset "utf-8";
 
-@import url(https://fonts.googleapis.com/css?family=Qwigley);
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
-@import url(https://fonts.googleapis.com/css?family=Bad+Script);
 
-
-@import 'home';
-@import 'vendor/fonts';
 
 .bad_script {
   font-family: 'Bad Script', cursive;
