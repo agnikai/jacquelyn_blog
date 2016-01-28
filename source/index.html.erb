@@ -3,15 +3,28 @@ title: Chaos Cat
 ---
 
 <div class="home">
-	<h1 class="title">Chaos Cat</h1>
-	<h2 class="blurb">A look at the intricaties of insanity as observed by one innocent onlooker.</h2>
-	<!-- Button trigger modal -->
-	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#recent_blogs_modal">
-	  Take a Peek.
-	</button>
-	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#blogs_by_tag_modal">
-	  Tag, you're it.
-	</button>
+	<div class="row">
+		<div class="col-sm-12">
+			<h1 class="title">Chaos Cat</h1>
+			<h2 class="blurb">A look at the intricaties of insanity as observed by one innocent onlooker.</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 modal_button">
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#recent_blogs_modal">
+			  Take a Peek.
+			</button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 modal_button">
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#blogs_by_tag_modal">
+			  Tag, you're it.
+			</button>
+		</div>
+	</div>
 
 	<!-- Modal -->
 	<div class="modal fade" id="recent_blogs_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -57,7 +70,7 @@ title: Chaos Cat
 				    		<%= article.summary %>
 
 				    		<a href="<%= article.url %>">Read more</a>
-				    		<p>****************************************************</p>
+				    		<p>****************************</p>
 				  		</article>
 						<% end %>
 					</div> <!-- recent_articles -->
