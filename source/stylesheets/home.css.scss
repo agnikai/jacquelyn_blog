@@ -68,6 +68,12 @@ div.home {
   }
 }
 
+.modal.fade {
+  background: -webkit-linear-gradient(#eee, #333);
+  .modal-content {
+    background: #d4d4d4 url("../images/background_collage.jpg");
+  }
+}
 /*body {
   
   text-align: center;
