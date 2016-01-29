@@ -1,6 +1,15 @@
+
 @import url(https://fonts.googleapis.com/css?family=Qwigley);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://fonts.googleapis.com/css?family=Bad+Script);
+
+
+.bad_script {
+  font-family: 'Bad Script', cursive;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 div.home {
   max-width: 60%;
@@ -30,12 +39,6 @@ div.home {
     font-size: 20px;
     text-align: center;
     max-width: 500px;
-    h1 {
-      margin-top: 30%;
-      text-align: center;
-      @extend .bad_script;
-      font-size: 25px;
-    }
     article {
       h1 a {
         text-decoration: none;
@@ -77,6 +80,9 @@ div.home {
     color: black;
     font-size: 30px;
     &:hover {
+      background: -webkit-linear-gradient(#eee, #333);
+    }
+    &:active {
       background-color: white;
       color: black;
     }
@@ -87,6 +93,19 @@ div.home {
   background: -webkit-linear-gradient(#eee, #333);
   .modal-content {
     // background: #d4d4d4 url("../images/background_collage.jpg");
+    background: -webkit-linear-gradient(#1ebf67, #3e4f56);
+    color: white;
+    .modal-header {
+      border: none;
+      button span {
+        font-size: 40px;
+      }
+    }
+    h1 {
+      text-align: center;
+      @extend .bad_script;
+      font-size: 25px;
+    }
   }
 }
 /*body {
@@ -103,51 +122,3 @@ div.home {
   margin-right: auto;
 }*/
 
-/*h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
-  margin: 0; }
-
-.doc {
-  font-size: 14px;
-  margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
-
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
-
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}*/

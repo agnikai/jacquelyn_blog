@@ -1,20 +1,16 @@
-@import 'home';
-@import 'vendor/fonts';
 //*= require bootstrap-sass/assets/stylesheets/_bootstrap
 //*= require_tree ./vendor
+//*= require_tree .
 
 @charset "utf-8";
 
+@import 'home';
+@import 'vendor/fonts';
 
 
-.bad_script {
-  font-family: 'Bad Script', cursive;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
-//*= require_tree .
+
+
 
 
 
