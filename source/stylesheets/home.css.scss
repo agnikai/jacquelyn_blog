@@ -1,7 +1,4 @@
 
-@import url(https://fonts.googleapis.com/css?family=Qwigley);
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
-@import url(https://fonts.googleapis.com/css?family=Bad+Script);
 
 
 .bad_script {
@@ -75,10 +72,11 @@ div.home {
 .modal_button {
   margin: 3em;
   button {
+    font-family: 'Qwigley', cursive;
     background-color: white;
     border: none;
     color: black;
-    font-size: 30px;
+    font-size: 40px;
     &:hover {
       background: -webkit-linear-gradient(#eee, #333);
     }
@@ -92,8 +90,9 @@ div.home {
 .modal.fade {
   background: -webkit-linear-gradient(#eee, #333);
   .modal-content {
-    // background: #d4d4d4 url("../images/background_collage.jpg");
-    background: -webkit-linear-gradient(#1ebf67, #3e4f56);
+    background: #d4d4d4 url("../images/back_design.jpg");
+
+    // background: -webkit-linear-gradient(#1ebf67, #3e4f56);
     color: white;
     .modal-header {
       border: none;
@@ -101,6 +100,7 @@ div.home {
         font-size: 40px;
       }
     }
+
     h1 {
       text-align: center;
       @extend .bad_script;
