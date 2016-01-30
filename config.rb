@@ -77,4 +77,5 @@ activate :blog do |blog|
   # set options on blog
   blog.permalink = "blog/{tag}/{title}.html"
   blog.default_extension = ".erb"
+  blog.layout = "blog_layout"
 end
