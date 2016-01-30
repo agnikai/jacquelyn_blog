@@ -1,0 +1,19 @@
+  <body class="<%= page_classes %>">
+
+    <%= partial(:header) %> 
+
+    <div class="row">
+      <div class="col-md-8 col-sm-12">
+
+        <%= yield %>
+
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <%= partial(:sidebar) %> 
+      </div>
+    </div>
+
+    
+
+    <%= partial(:footer) %> 
+  </body>
