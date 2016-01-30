@@ -1,3 +1,15 @@
 .blog_body {
 	margin: 10% 15%;
+	h1.blog_title {
+		font-family: 'Bangers', sans-serif;
+	}
+	h2.blog_sub_title {
+		font-family: 'Cabin Sketch', cursive;
+		font-size: 25px;
+	}
+	p {
+		font-family: 'BenchNine', sans-serif;
+		font-size: 20px;
+		line-height: 1.8em;
+	}
 }
