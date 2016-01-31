@@ -8,15 +8,19 @@
   -webkit-text-fill-color: transparent;
 }
 
+body.home_page {
+  background: #d4d4d4 url("../images/home_back.jpg");
+}
+
 div.home {
   max-width: 60%;
   margin-left: auto;
   margin-right: auto;
+  background: #d4d4d4 url("../images/home_back.jpg");
   h1.title {
     font-family: 'Qwigley', cursive;
     font-size: 130px;
     text-align: right;
-    margin-bottom: -30px;
     background: -webkit-linear-gradient(#eee, #333);
     // background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
     -webkit-background-clip: text;
@@ -29,6 +33,7 @@ div.home {
     text-align: right;
     max-width: 300px;
     float: right;
+    color: white;
   }
 
   .recent_articles {
@@ -73,9 +78,10 @@ div.home {
   margin: 3em;
   button {
     font-family: 'Qwigley', cursive;
-    background-color: white;
+    background: none;
     border: none;
-    color: black;
+    color: white;
+    font-weight: bold;
     font-size: 40px;
     &:hover {
       background: -webkit-linear-gradient(#eee, #333);
@@ -90,7 +96,7 @@ div.home {
 .modal.fade {
   background: -webkit-linear-gradient(#eee, #333);
   .modal-content {
-    background: #d4d4d4 url("../images/back_design.jpg");
+    // background: #d4d4d4 url("../images/back_design.jpg");
 
     // background: -webkit-linear-gradient(#1ebf67, #3e4f56);
     color: white;

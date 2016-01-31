@@ -4,4 +4,22 @@
 		font-family: 'Poiret One', cursive;
 	    font-size: 20px;
 	}
+	article {
+		a {
+			text-decoration: none;
+			font-family: 'BenchNine', cursive;
+			color: black;
+			font-size: 18px;
+			line-height: 1.8em;
+		}
+	}
+	ul {
+		li {
+			list-style: none;
+			h5 {
+				font-family: 'Cabin Sketch', cursive;
+				text-transform: uppercase;
+			}
+		}
+	}
 }
