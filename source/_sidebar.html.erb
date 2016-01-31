@@ -4,10 +4,7 @@
 			<h1 class="sidebar_title">Rants, Reviews, Experiences, & Musings</h1>
 			<% blog.articles[0...5].each do |article| %>
 	  		<article>
-	  			<a href="<%=article.url %>">Article Number</a>
-
-	    		<a href="<%= article.url %>">Read more</a>
-	    		<p>****************************************************</p>
+	  			<%= link_to article.title, article.url %>
 	  		</article>
 			<% end %>
 			<ul>
