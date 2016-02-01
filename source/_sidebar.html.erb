@@ -2,11 +2,15 @@
 	<div class="row">
 		<div class="col-sm-12">
 			<h1 class="sidebar_title">Rants, Reviews, Experiences, & Musings</h1>
+			<ul>
 			<% blog.articles[0...5].each do |article| %>
-	  		<article>
-	  			<%= link_to article.title, article.url %>
-	  		</article>
-			<% end %>
+				<li>
+			  		<article>
+			  			<%= link_to article.title, article.url %>
+			  		</article>
+					<% end %>
+				</li>
+			</ul>
 			<ul>
 			  <% blog.tags.each do |tag, articles| %>
 			    <li>
