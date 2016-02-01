@@ -9,14 +9,14 @@
 }
 
 body.home_page {
-  background: #d4d4d4 url("../images/home_back.jpg");
+  // background: #d4d4d4 url("../images/home_back.jpg");
+  background-size: cover;
 }
 
 div.home {
   max-width: 60%;
   margin-left: auto;
   margin-right: auto;
-  background: #d4d4d4 url("../images/home_back.jpg");
   h1.title {
     font-family: 'Qwigley', cursive;
     font-size: 130px;
@@ -33,7 +33,7 @@ div.home {
     text-align: right;
     max-width: 300px;
     float: right;
-    color: white;
+    color: black;
   }
 
   .recent_articles {
@@ -75,7 +75,6 @@ div.home {
 }
 
 .modal_button {
-  margin: 3em;
   button {
     font-family: 'Qwigley', cursive;
     background: none;
@@ -91,6 +90,18 @@ div.home {
       color: black;
     }
   }
+}
+
+button.recents_button {
+  background: #d4d4d4 url("../images/home_flower.jpg");
+  height: 400px;
+  width: 400px;
+}
+
+button.tag_button {
+  background: #d4d4d4 url("../images/home_red_wall.jpg");
+  height: 400px;
+  width: 400px;
 }
 
 .modal.fade {
