@@ -1,6 +1,4 @@
-
-
-
+//Font Class
 .bad_script {
   font-family: 'Bad Script', cursive;
   background: -webkit-linear-gradient(#eee, #333);
@@ -8,50 +6,91 @@
   -webkit-text-fill-color: transparent;
 }
 
-body.home_page {
-  // background: #d4d4d4 url("../images/home_back.jpg");
-  background-size: cover;
-}
-
 div.home {
-  max-width: 60%;
   margin-left: auto;
   margin-right: auto;
-  h1.title {
-    font-family: 'Qwigley', cursive;
-    font-size: 130px;
-    text-align: right;
-    background: -webkit-linear-gradient(#eee, #333);
-    // background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  
+
+  .header {
+    background: #d4d4d4 url("../images/flower_background.jpg");  
+    background-size: cover;
+    height: 700px;
+    z-index: 999;
+    padding-left: 10%;
+    // set animation
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+
+    h1.title {
+      margin-right: 10%;
+      font-family: 'Qwigley', cursive;
+      font-size: 130px;
+      background: -webkit-linear-gradient(#eee, black);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 1s linear;
+    }
+
+    h2.blurb {
+      font-family: 'Poiret One', cursive;
+      font-weight: bold;
+      font-size: 20px;
+      max-width: 300px;
+      color: black;
+      opacity: 1;
+      transition: all 1s ease;
+    }
   }
 
-  h2.blurb {
-    font-family: 'Poiret One', cursive;
-    font-size: 20px;
-    text-align: right;
-    max-width: 300px;
-    float: right;
-    color: black;
-  }
+  .header.sticky {
+    position: fixed;
+    line-height: 48px;
+    height: 250px; 
+    width: 100%;
+    h1.title {
+      font-size: 50px;
+    }
+    h2.blurb {
+      opacity: 0;
+    }
+
+}
 
   .recent_articles {
     font-family: 'Poiret One', cursive;
+    background: none;
     font-size: 20px;
     text-align: center;
-    max-width: 500px;
-    article {
-      h1 a {
-        text-decoration: none;
-        @extend .bad_script;
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 1s ease;
+    transition-delay: 2s;
+
+    .recent_articles_content {
+      max-width: 500px;
+      margin-right: auto; 
+      margin-left: auto;
+
+      h1.blog_title {
+        font-family: 'Cabin Sketch', cursive;
       }
-      a {
-        @extend .bad_script;
+      article {
+        h1 a {
+          text-decoration: none;
+          font-family: 'Cabin Sketch', cursive;
+        }
+        a {
+          @extend .bad_script;
+        }
       }
     }
   }
 
+  .recent_articles.show {
+    opacity: 0.9;
+    transform: translateY(500px);
+  }
 }
 
 .articles_list {
@@ -76,14 +115,18 @@ div.home {
 
 .modal_button {
   button {
+    height: 200px;
+    width: 200px;
     font-family: 'Qwigley', cursive;
     background: none;
     border: none;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 40px;
+    background: -webkit-linear-gradient(none, #eee);
     &:hover {
-      background: -webkit-linear-gradient(#eee, #333);
+      font-size: 60px;
+      background: none;
     }
     &:active {
       background-color: white;
@@ -92,17 +135,17 @@ div.home {
   }
 }
 
-button.recents_button {
-  background: #d4d4d4 url("../images/home_flower.jpg");
-  height: 400px;
-  width: 400px;
-}
+// button.recents_button {
+//   background: #d4d4d4 url("../images/home_flower.jpg");
+//   height: 400px;
+//   width: 400px;
+// }
 
-button.tag_button {
-  background: #d4d4d4 url("../images/home_red_wall.jpg");
-  height: 400px;
-  width: 400px;
-}
+// button.tag_button {
+//   background: #d4d4d4 url("../images/home_red_wall.jpg");
+//   height: 400px;
+//   width: 400px;
+// }
 
 .modal.fade {
   background: -webkit-linear-gradient(#eee, #333);
@@ -125,17 +168,5 @@ button.tag_button {
     }
   }
 }
-/*body {
-  
-  text-align: center;
-  font-family: sans-serif; }
 
-div.home {
-  background: #d4d4d4 url("../images/background_collage.jpg");
-  background-size: 700px;
-  max-width: 700px;
-  min-height: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}*/
 
