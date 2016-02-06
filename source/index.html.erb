@@ -16,7 +16,6 @@ title: Chaos Cat
 					<h1>Rants, Reviews, Experiences, & Musings</h1>
 					<% blog.articles[0...5].each do |article| %>
 			  		<article>
-			  			<a href="<%=article.url %>">Article Number</a>
 
 			    		<%= article.summary %>
 
@@ -34,32 +33,7 @@ title: Chaos Cat
 		</div>
 	</div>
 
-	<div class="modal fade" id="blogs_by_tag_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  	<div class="modal-dialog" role="document">
-	    	<div class="modal-content">
-	      		<div class="modal-header">
-	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	      		</div> <!-- moday-header -->
-	      		<div class="modal-body">
-	       			<div class="articles_by_tag">
-	       				<h1>Rants, Reviews, Experiences, & Musings</h1>
-						<ul>
-						  <% blog.tags.each do |tag, articles| %>
-						    <li>
-						      <h5><%= tag %></h5>
-						      <ul>
-						        <% articles.each do |article| %>
-						          <li><a href="<%= article.url %>"><%= article.title %></a></li>
-						        <% end %>
-						      </ul>
-						    </li>
-						  <% end %>
-						</ul>
-					</div> <!-- articles_by_tag -->
-	      		</div> <!-- modal-body -->
-	    	</div> <!-- modal-content -->
-	  	</div> <!-- modal-dialog -->
-	</div> <!-- modal-fade -->
+	<%= partial(:tag_modal) %>
 
 </div> <!-- home -->
 
