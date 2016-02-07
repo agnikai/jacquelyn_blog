@@ -1,9 +1,13 @@
 //Font Class
 .bad_script {
   font-family: 'Bad Script', cursive;
-  background: -webkit-linear-gradient(#eee, #333);
+  background: -webkit-linear-gradient(gray, black);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+body {
+  background-color: #F2F2F2;
 }
 
 div.home {
@@ -12,7 +16,7 @@ div.home {
   
 
   .header {
-    background: #d4d4d4 url("../images/flower_background.jpg");  
+    background: #d4d4d4 url("../images/writing.jpeg");  
     background-size: cover;
     height: 700px;
     z-index: 999;
@@ -22,10 +26,10 @@ div.home {
     transition: all 1s ease;
 
     h1.title {
-      margin-right: 10%;
+      margin-right: 5%;
       font-family: 'Qwigley', cursive;
       font-size: 130px;
-      background: -webkit-linear-gradient(#eee, black);
+      background: -webkit-linear-gradient(gray, black);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       transition: all 1s linear;
@@ -39,16 +43,21 @@ div.home {
       color: black;
       opacity: 1;
       transition: all 1s ease;
+      text-shadow: 3px 4px 5px white;
     }
   }
 
   .header.sticky {
     position: fixed;
     line-height: 48px;
-    height: 150px; 
+    height: 275px; 
     width: 100%;
+    -webkit-box-shadow: inset 0px -13px 96px 49px #F2F2F2;
+    -moz-box-shadow: inset 0px -13px 96px 49px #F2F2F2;
+    box-shadow: inset 0px -13px 96px 49px #F2F2F2;
     h1.title {
       font-size: 50px;
+      text-shadow: 3px 4px 5px #000;
     }
     h2.blurb {
       opacity: 0;
@@ -62,12 +71,14 @@ div.home {
     font-size: 20px;
     text-align: center;
     opacity: 0;
+    padding-top: 40px;
     margin-left: auto;
     margin-right: auto;
     transition: all 1s ease;
     transition-delay: 2s;
     margin-top: -200px;
-    background: -webkit-linear-gradient(white, #F2F2F2);
+    background-color: #F2F2F2;
+    // background: -webkit-linear-gradient(white, #F2F2F2);
 
     .recent_articles_content {
       max-width: 650px;
@@ -77,6 +88,8 @@ div.home {
       h1.blog_title  {
         font-family: 'Cabin Sketch', cursive;
         font-size: 35px;
+        text-decoration: underline;
+        padding-bottom: 5px;
       }
 
       h2.blog_sub_title {
@@ -84,11 +97,13 @@ div.home {
         font-size: 20px;
       }
       article {
+        border-bottom: 3px dotted gray;
+        padding-bottom: 20px;
         h1 a {
           text-decoration: none;
           font-family: 'Cabin Sketch', cursive;
         }
-        a {
+        a.more {
           @extend .bad_script;
         }
         p {
@@ -106,29 +121,9 @@ div.home {
   }
 }
 
-.articles_list {
-
-
-  .articles_by_tag {
-    font-family: 'Poiret One', cursive;
-    font-size: 20px;
-    text-align: center;
-    ul {
-      list-style: none;
-      li {
-        text-transform: lowercase;
-        h5 a {
-          text-decoration: none;
-        }
-      }
-    }
-  }
-
-}
-
 .modal_button {
   button {
-    height: 200px;
+    height: 100px;
     width: 200px;
     font-family: 'Qwigley', cursive;
     background: none;
@@ -136,50 +131,16 @@ div.home {
     color: black;
     font-weight: bold;
     font-size: 40px;
-    background: -webkit-linear-gradient(none, #eee);
+    border-bottom: 3px dashed gray;
+    margin-bottom: 10px; 
     &:hover {
-      font-size: 60px;
+      font-size: 50px;
       background: none;
-    }
-    &:active {
-      background-color: white;
-      color: black;
+      color: gray;
     }
   }
 }
 
-// button.recents_button {
-//   background: #d4d4d4 url("../images/home_flower.jpg");
-//   height: 400px;
-//   width: 400px;
-// }
 
-// button.tag_button {
-//   background: #d4d4d4 url("../images/home_red_wall.jpg");
-//   height: 400px;
-//   width: 400px;
-// }
-
-.modal.fade {
-  background: -webkit-linear-gradient(#eee, #333);
-  .modal-content {
-    // background: #d4d4d4 url("../images/back_design.jpg");
-
-    // background: -webkit-linear-gradient(#1ebf67, #3e4f56);
-    color: white;
-    .modal-header {
-      border: none;
-      button span {
-        font-size: 40px;
-      }
-    }
-
-    h1 {
-      text-align: center;
-      @extend .bad_script;
-      font-size: 25px;
-    }
-  }
-}
 
 
