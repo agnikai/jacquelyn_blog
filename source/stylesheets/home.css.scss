@@ -127,13 +127,13 @@ div.home {
     width: 200px;
     font-family: 'Qwigley', cursive;
     background: none;
-    border: none;
     color: black;
     font-weight: bold;
     font-size: 40px;
     margin-top: 10px;
     margin-bottom: 10px; 
     border: 3px solid black;
+    border-radius: 50%;
     box-shadow: inset 0px 0px 30px 0px #000;
     &:hover {
       font-size: 50px;
