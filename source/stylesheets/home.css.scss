@@ -57,7 +57,7 @@ div.home {
     box-shadow: inset 0px -13px 96px 49px #F2F2F2;
     h1.title {
       font-size: 50px;
-      text-shadow: 3px 4px 5px #000;
+      margin-top: 5%;
     }
     h2.blurb {
       opacity: 0;
@@ -131,12 +131,17 @@ div.home {
     color: black;
     font-weight: bold;
     font-size: 40px;
-    border-bottom: 3px dashed gray;
+    margin-top: 10px;
     margin-bottom: 10px; 
+    border: 3px solid black;
+    box-shadow: inset 0px 0px 30px 0px #000;
     &:hover {
       font-size: 50px;
       background: none;
       color: gray;
+      background-color: black;
+      box-shadow: inset 0px 0px 30px 0px #eee;
+      border: 3px solid #eee;
     }
   }
 }
