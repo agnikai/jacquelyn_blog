@@ -10,7 +10,7 @@
 					<ul>
 					  <% blog.tags.each do |tag, articles| %>
 					    <li>
-					      <h5><%= tag %></h5>
+					      <h5 class="tag_name"><%= tag %></h5>
 					      <ul>
 					        <% articles.each do |article| %>
 					          <li><a href="<%= article.url %>"><%= article.title %></a></li>
