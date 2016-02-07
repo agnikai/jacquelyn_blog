@@ -1,0 +1,57 @@
+//Font Class
+.bad_script {
+  font-family: 'Bad Script', cursive;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modal.fade {
+  	background: -webkit-linear-gradient(#eee, #333);
+  	.modal-content {
+    	color: white;
+    	.modal-header {
+      		border: none;
+      		button span {
+        		font-size: 40px;
+      		}
+    	}
+
+	    .modal-body {
+	    	.articles_by_tag {
+			  	font-family: 'Poiret One', cursive;
+			 	font-size: 20px;
+			  	text-align: center;
+			  	h1 {
+			    	text-align: center;
+		      		@extend .bad_script;
+		      		font-size: 25px;
+		     		padding-bottom: 20px;
+		    		margin-bottom: 20px;
+		    		border-bottom: 3px dashed gray;
+			  	}
+			  	ul {
+			    	list-style: none;
+			    	h5.tag_name {
+			        	text-decoration: none;
+			        	font-family: 'Cabin Sketch', sans-serif;
+			        	font-size: 20px;
+			        	color: black;
+			        	text-transform: uppercase;
+			      	}
+			    	li {
+			      		a {
+			        		font-family: 'Poiret One', sans-serif;
+			        		color: black;
+			        		&:hover {
+			          			color: gray;
+			          			text-decoration: none;
+			        		}	
+			      		}
+					}
+			  	}
+			}
+	    }
+  	}
+}
+
