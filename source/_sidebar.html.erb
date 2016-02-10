@@ -6,34 +6,18 @@
 	</div>
 	<div class="row">
 		<div class="col-sm-12 sidebar_menu_content">
-			<img src="/images/black_design_mirror.jpg"/>
 			<div class="most_recents">
-				<div class="most_recents_options">
-					<% blog.articles[0...5].each do |article| %>
+				<% blog.articles[0...5].each do |article| %>
+				<div class="post_name">
 			  		<article>
 			  			<%= link_to article.title, article.url %>
 			  		</article>
-					<% end %>
-
-				</div>
+			  	</div>
+			  	<div class="read_me">
+			  		<h1>Read Me</h1>
+			  	</div>
+				<% end %>
 			</div>
-<!-- 			<div class="tags">
-			</div>
-			<div class="tags_options">
-				<ul>
-				  <% blog.tags.each do |tag, articles| %>
-				    <li>
-				      <h5><%= tag %></h5>
-				      <ul>
-				        <% articles.each do |article| %>
-				          <li><a href="<%= article.url %>"><%= article.title %></a></li>
-				        <% end %>
-				      </ul>
-				    </li>
-				  <% end %>
-				</ul> -->
-				<!-- <button class="creature">Click Here!</button> -->
-<!-- 			</div> -->
 		</div>
 	</div>
 </div>
