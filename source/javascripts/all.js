@@ -1,5 +1,6 @@
 //= require jquery/dist/jquery
 //= require bootstrap-sass/assets/javascripts/bootstrap
+//= requre vivus/dist/vivus.min.js
 //= require_tree .
 
 $(window).scroll(function() {
