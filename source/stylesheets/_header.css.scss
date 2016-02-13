@@ -1,16 +1,16 @@
 #blog_page_header {
-	background: #d4d4d4 url("../images/leaves2.jpg");
+	background: #d4d4d4 url("../images/writing-2.jpeg");
   	background-size: cover;
   	height: 200px;
   	&:hover {
-  		opacity: 0.5;
+  		
   	}
 	h1.title {
 		font-family: 'Qwigley', cursive;
 		font-size: 60px;
 		text-align: right;
 		margin-right: 10%;
-		background: -webkit-linear-gradient(#eee, #333);
+		background: -webkit-linear-gradient(#333, #000);
 		// background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
